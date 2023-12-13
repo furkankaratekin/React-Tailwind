@@ -1,0 +1,1 @@
+Bro 47.47 de kaldın yarın devam et 
