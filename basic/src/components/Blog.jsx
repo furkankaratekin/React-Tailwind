@@ -1,23 +1,22 @@
 import React from "react";
-import blog1 from '../assets/blog1.png'
 
 const Blog = () => {
   const blogs = [
     {
       id: 1,
       title: "Creating Streamlined Safeguarding Processes with OneRen",
-      image: {blog1},
+      image: "../src/assets/blog01.png",
     },
     {
       id: 2,
       title:
-        "What are your safeguarding responsibilities and how can you manage them?",
-      image: {},
+        "How can you manage them?",
+      image: "../src/assets/blog02.png",
     },
     {
       id: 3,
       title: "Revamping the Membership Model with Triathlon Australia",
-      image: {},
+      image: "../src/assets/blog03.png"
     },
   ];
   return (
@@ -38,7 +37,7 @@ const Blog = () => {
         {blogs.map((blog) => (
           <div key={blog.id}>
             <img src={blog.image} alt="" />
-            <div>
+            <div className=" px-4 py-8">
               <h3>{blog.title}</h3>
               <div className="flex items-center gap-6">
                 <a
